@@ -1981,20 +1981,19 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <part name="VR1" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
 <part name="VR2" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
 <part name="VR3" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
-<part name="VR4" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
 <part name="VR5" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
 <part name="VR6" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
 <part name="U1" library="SparkFun-Electromechanical" deviceset="JOYSTICK" device="PTH"/>
 <part name="X4" library="SparkFun-Connectors" deviceset="M05" device="LOCK"/>
 <part name="X3" library="SparkFun-Connectors" deviceset="M07" device="LOCK"/>
-<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S4" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="S5" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="3MM"/>
+<part name="S2" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="12MM" value="SWITCH-MOMENTARY-212MM"/>
+<part name="S3" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="12MM" value="SWITCH-MOMENTARY-212MM"/>
+<part name="S4" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="12MM" value="SWITCH-MOMENTARY-212MM"/>
 <part name="LED2" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="LED3" library="SparkFun-LED" deviceset="LED" device="3MM"/>
 <part name="LED4" library="SparkFun-LED" deviceset="LED" device="3MM"/>
+<part name="VR7" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
+<part name="VR8" library="MusicThingModular" deviceset="9MM_SNAP-IN_POT_CHASSIS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2005,7 +2004,6 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="VR1" gate="G$1" x="63.5" y="99.06" rot="R180"/>
 <instance part="VR2" gate="G$1" x="63.5" y="81.28" rot="R180"/>
 <instance part="VR3" gate="G$1" x="63.5" y="63.5" rot="R180"/>
-<instance part="VR4" gate="G$1" x="63.5" y="45.72" rot="R180"/>
 <instance part="VR5" gate="G$1" x="81.28" y="99.06" rot="R180"/>
 <instance part="VR6" gate="G$1" x="81.28" y="81.28" rot="R180"/>
 <instance part="U1" gate="G$1" x="101.6" y="63.5"/>
@@ -2014,11 +2012,11 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <instance part="S2" gate="G$1" x="48.26" y="20.32"/>
 <instance part="S3" gate="G$1" x="63.5" y="20.32"/>
 <instance part="S4" gate="G$1" x="63.5" y="30.48"/>
-<instance part="S5" gate="G$1" x="48.26" y="43.18"/>
-<instance part="LED1" gate="G$1" x="127" y="78.74"/>
 <instance part="LED2" gate="G$1" x="124.46" y="66.04"/>
 <instance part="LED3" gate="G$1" x="124.46" y="53.34"/>
 <instance part="LED4" gate="G$1" x="124.46" y="30.48"/>
+<instance part="VR7" gate="G$1" x="124.46" y="83.82" rot="R180"/>
+<instance part="VR8" gate="G$1" x="142.24" y="78.74" rot="R180"/>
 </instances>
 <busses>
 </busses>
