@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -129,16 +129,18 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="111.74" y2="0" width="0" layer="20"/>
-<wire x1="111.74" y1="0" x2="111.74" y2="24" width="0" layer="20"/>
-<wire x1="111.74" y1="24" x2="62" y2="24" width="0" layer="20"/>
-<wire x1="62" y1="24" x2="62" y2="50" width="0" layer="20"/>
-<wire x1="62" y1="50" x2="27" y2="50" width="0" layer="20"/>
-<wire x1="27" y1="50" x2="27" y2="24.13" width="0" layer="20"/>
-<wire x1="27" y1="24.13" x2="18" y2="24.13" width="0" layer="20"/>
-<wire x1="18" y1="24.13" x2="18" y2="50" width="0" layer="20"/>
-<wire x1="18" y1="50" x2="0" y2="50" width="0" layer="20"/>
-<wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
+<wire x1="160" y1="0" x2="160" y2="24" width="0" layer="20"/>
+<wire x1="160" y1="24" x2="110.26" y2="24" width="0" layer="20"/>
+<wire x1="110.26" y1="24" x2="110.26" y2="50" width="0" layer="20"/>
+<wire x1="110.26" y1="50" x2="75.26" y2="50" width="0" layer="20"/>
+<wire x1="75.26" y1="50" x2="75.26" y2="24.13" width="0" layer="20"/>
+<wire x1="75.26" y1="24.13" x2="66.26" y2="24.13" width="0" layer="20"/>
+<wire x1="66.26" y1="24.13" x2="66.26" y2="50" width="0" layer="20"/>
+<wire x1="66.26" y1="50" x2="36.83" y2="50" width="0" layer="20"/>
+<wire x1="36.83" y1="50" x2="36.83" y2="32" width="0" layer="20"/>
+<wire x1="36.83" y1="32" x2="0" y2="32" width="0" layer="20"/>
+<wire x1="0" y1="32" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -711,28 +713,29 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="SparkFun-Connectors" package="1X40" value="M40" x="50.8" y="1.27"/>
-<element name="VR1" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="52.07" y="44.45"/>
-<element name="VR2" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="35.56" y="44.45"/>
-<element name="VR3" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="85.725" y="15.24"/>
-<element name="VR4" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="99.06" y="15.24"/>
-<element name="VR5" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="11.43" y="44.45"/>
-<element name="VR6" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="72.39" y="15.24"/>
-<element name="U1" library="SparkFun-Electromechanical" package="JOYSTICK" value="JOYSTICKPTH" x="41.91" y="15.24"/>
-<element name="X4" library="SparkFun-Connectors" package="1X05_LOCK" value="" x="59.69" y="17.78" rot="R90"/>
-<element name="X3" library="SparkFun-Connectors" package="1X07_LOCK" value="" x="1.27" y="34.29"/>
-<element name="U$2" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="3.81" y="39.7"/>
-<element name="U$3" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="3.81" y="9.6"/>
-<element name="U$4" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="107.95" y="9.6"/>
-<element name="U$6" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="63.5" y="11.43"/>
-<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="6.35" y="19.05" rot="R45"/>
-<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="16.51" y="8.89" rot="R45"/>
-<element name="S4" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="20.32" y="17.78" rot="R45"/>
-<element name="S5" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="11.43" y="13.97" rot="R45"/>
-<element name="LED1" library="SparkFun-LED" package="LED3MM" value="" x="11.43" y="27.94"/>
-<element name="LED2" library="SparkFun-LED" package="LED3MM" value="" x="30.48" y="31.75"/>
-<element name="LED3" library="SparkFun-LED" package="LED3MM" value="" x="55.88" y="31.75"/>
-<element name="LED4" library="SparkFun-LED" package="LED3MM" value="" x="3.81" y="27.94"/>
+<element name="U$1" library="SparkFun-Connectors" package="1X40" value="M40" x="99.06" y="1.27"/>
+<element name="VR1" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="100.33" y="44.45"/>
+<element name="VR2" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="83.82" y="44.45"/>
+<element name="VR3" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="133.985" y="15.24"/>
+<element name="VR4" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="147.32" y="15.24"/>
+<element name="VR5" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="59.69" y="44.45"/>
+<element name="VR6" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="120.65" y="15.24"/>
+<element name="U1" library="SparkFun-Electromechanical" package="JOYSTICK" value="JOYSTICKPTH" x="20.32" y="15.24"/>
+<element name="X4" library="SparkFun-Connectors" package="1X05_LOCK" value="" x="107.95" y="17.78" rot="R90"/>
+<element name="X3" library="SparkFun-Connectors" package="1X07_LOCK" value="" x="49.53" y="34.29"/>
+<element name="U$2" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="52.07" y="39.7"/>
+<element name="U$3" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="38.1" y="9.6"/>
+<element name="U$4" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="156.21" y="9.6"/>
+<element name="U$6" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="111.76" y="11.43"/>
+<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="54.61" y="19.05" rot="R45"/>
+<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="64.77" y="8.89" rot="R45"/>
+<element name="S4" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="68.58" y="17.78" rot="R45"/>
+<element name="S5" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="59.69" y="13.97" rot="R45"/>
+<element name="LED1" library="SparkFun-LED" package="LED3MM" value="" x="59.69" y="27.94"/>
+<element name="LED2" library="SparkFun-LED" package="LED3MM" value="" x="78.74" y="31.75"/>
+<element name="LED3" library="SparkFun-LED" package="LED3MM" value="" x="104.14" y="31.75"/>
+<element name="LED4" library="SparkFun-LED" package="LED3MM" value="" x="52.07" y="27.94"/>
+<element name="U$5" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="3.81" y="8.33"/>
 </elements>
 <signals>
 <signal name="RIN+">
@@ -750,7 +753,7 @@ design rules under a new name.</description>
 <signal name="VDDC">
 <contactref element="U$1" pad="30"/>
 <contactref element="U$1" pad="29"/>
-<wire x1="72.39" y1="1.27" x2="74.93" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="120.65" y1="1.27" x2="123.19" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB1">
 <contactref element="U$1" pad="27"/>
@@ -773,7 +776,7 @@ design rules under a new name.</description>
 <signal name="VDDA">
 <contactref element="U$1" pad="21"/>
 <contactref element="U$1" pad="15"/>
-<wire x1="36.83" y1="1.27" x2="52.07" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="85.09" y1="1.27" x2="100.33" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA3">
 <contactref element="U$1" pad="19"/>
@@ -808,7 +811,7 @@ design rules under a new name.</description>
 <signal name="VDD">
 <contactref element="U$1" pad="7"/>
 <contactref element="U$1" pad="1"/>
-<wire x1="1.27" y1="1.27" x2="16.51" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="49.53" y1="1.27" x2="64.77" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB9">
 <contactref element="U$1" pad="5"/>
@@ -830,12 +833,12 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="20"/>
 <contactref element="U$1" pad="14"/>
 <contactref element="U$1" pad="6"/>
-<wire x1="82.55" y1="1.27" x2="100.33" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="80.01" y1="1.27" x2="82.55" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="69.85" y1="1.27" x2="80.01" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="49.53" y1="1.27" x2="69.85" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="34.29" y1="1.27" x2="49.53" y2="1.27" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="1.27" x2="34.29" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="130.81" y1="1.27" x2="148.59" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="128.27" y1="1.27" x2="130.81" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="118.11" y1="1.27" x2="128.27" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="97.79" y1="1.27" x2="118.11" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="82.55" y1="1.27" x2="97.79" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="62.23" y1="1.27" x2="82.55" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOUT+-">
 <contactref element="U$1" pad="39"/>
