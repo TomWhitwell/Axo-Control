@@ -129,16 +129,22 @@
 </layers>
 <board>
 <plain>
-<wire x1="1.27" y1="0" x2="113.01" y2="0" width="0" layer="20"/>
-<wire x1="113.01" y1="0" x2="113.01" y2="40.51" width="0" layer="20"/>
-<wire x1="113.01" y1="40.51" x2="63.27" y2="40.51" width="0" layer="20"/>
-<wire x1="63.27" y1="40.51" x2="63.27" y2="66.51" width="0" layer="20"/>
-<wire x1="63.27" y1="66.51" x2="28.27" y2="66.51" width="0" layer="20"/>
-<wire x1="28.27" y1="66.51" x2="28.27" y2="40.64" width="0" layer="20"/>
-<wire x1="28.27" y1="40.64" x2="19.27" y2="40.64" width="0" layer="20"/>
-<wire x1="19.27" y1="40.64" x2="19.27" y2="66.51" width="0" layer="20"/>
-<wire x1="19.27" y1="66.51" x2="1.27" y2="66.51" width="0" layer="20"/>
-<wire x1="1.27" y1="66.51" x2="1.27" y2="0" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
+<wire x1="160" y1="0" x2="160" y2="66.51" width="0" layer="20"/>
+<wire x1="160" y1="66.51" x2="152.4" y2="66.51" width="0" layer="20"/>
+<wire x1="152.4" y1="66.51" x2="152.4" y2="40.51" width="0" layer="20"/>
+<wire x1="152.4" y1="40.51" x2="110.26" y2="40.51" width="0" layer="20"/>
+<wire x1="110.26" y1="40.51" x2="110.26" y2="66.51" width="0" layer="20"/>
+<wire x1="110.26" y1="66.51" x2="75.26" y2="66.51" width="0" layer="20"/>
+<wire x1="75.26" y1="66.51" x2="75.26" y2="40.64" width="0" layer="20"/>
+<wire x1="75.26" y1="40.64" x2="66.26" y2="40.64" width="0" layer="20"/>
+<wire x1="66.26" y1="40.64" x2="66.26" y2="66.51" width="0" layer="20"/>
+<wire x1="66.26" y1="66.51" x2="48.26" y2="66.51" width="0" layer="20"/>
+<wire x1="48.26" y1="66.51" x2="48.26" y2="48.51" width="0" layer="20"/>
+<wire x1="48.26" y1="48.51" x2="7.62" y2="48.51" width="0" layer="20"/>
+<wire x1="7.62" y1="48.51" x2="7.62" y2="66.51" width="0" layer="20"/>
+<wire x1="7.62" y1="66.51" x2="0" y2="66.51" width="0" layer="20"/>
+<wire x1="0" y1="66.51" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -386,34 +392,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 &lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="TACTILE-PTH">
-<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
 <package name="TACTILE-PTH-12MM">
 <wire x1="5" y1="-1.3" x2="5" y2="-0.7" width="0.2032" layer="51"/>
 <wire x1="5" y1="-0.7" x2="4.5" y2="-0.2" width="0.2032" layer="51"/>
@@ -452,32 +430,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pad name="BOTTOM" x="16.75" y="-2" drill="1.5"/>
 <text x="-12.7" y="0" size="1.778" layer="25" font="vector" ratio="15">&gt;NAME</text>
 <text x="2.54" y="0" size="1.778" layer="27" font="vector" ratio="15">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="SparkFun-LED">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find discrete LEDs for illumination or indication, but no displays.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="LED3MM">
-<description>&lt;B&gt;LED&lt;/B&gt;&lt;p&gt;
-3 mm, round</description>
-<wire x1="1.5748" y1="-1.27" x2="1.5748" y2="1.27" width="0.254" layer="51"/>
-<wire x1="0" y1="2.032" x2="1.561" y2="1.3009" width="0.254" layer="21" curve="-50.193108" cap="flat"/>
-<wire x1="-1.7929" y1="0.9562" x2="0" y2="2.032" width="0.254" layer="21" curve="-61.926949" cap="flat"/>
-<wire x1="0" y1="-2.032" x2="1.5512" y2="-1.3126" width="0.254" layer="21" curve="49.763022" cap="flat"/>
-<wire x1="-1.7643" y1="-1.0082" x2="0" y2="-2.032" width="0.254" layer="21" curve="60.255215" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7891" y2="0.9634" width="0.254" layer="51" curve="-28.301701" cap="flat"/>
-<wire x1="-2.032" y1="0" x2="-1.7306" y2="-1.065" width="0.254" layer="51" curve="31.60822" cap="flat"/>
-<wire x1="1.5748" y1="1.2954" x2="1.5748" y2="0.7874" width="0.254" layer="21"/>
-<wire x1="1.5748" y1="-1.2954" x2="1.5748" y2="-0.8382" width="0.254" layer="21"/>
-<pad name="A" x="-1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<pad name="K" x="1.27" y="0" drill="0.8128" diameter="1.8796"/>
-<text x="1.905" y="0.381" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="1.905" y="-1.651" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 </library>
@@ -670,52 +622,63 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="SparkFun-Connectors" package="1X40" value="M40" x="52.07" y="17.78"/>
-<element name="X4" library="SparkFun-Connectors" package="1X05_LOCK" value="" x="60.96" y="34.29" rot="R90"/>
-<element name="X3" library="SparkFun-Connectors" package="1X07_LOCK" value="" x="2.54" y="50.8"/>
+<element name="U$1" library="SparkFun-Connectors" package="1X40" value="M40" x="109.22" y="17.78"/>
+<element name="X4" library="SparkFun-Connectors" package="1X05_LOCK" value="" x="107.95" y="33.02" rot="R90"/>
+<element name="X3" library="SparkFun-Connectors" package="1X07_LOCK" value="" x="49.53" y="50.8"/>
 <element name="U$2" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="5.08" y="56.21"/>
 <element name="U$3" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="5.08" y="26.11"/>
-<element name="U$4" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="109.22" y="26.11"/>
-<element name="U$5" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="109.22" y="58.42"/>
-<element name="U$6" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="64.77" y="27.94"/>
-<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="71.12" y="60.96"/>
-<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="43.18" y="50.8" rot="R90"/>
-<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="35.56" y="50.8" rot="R90"/>
-<element name="S4" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="58.42" y="50.8" rot="R90"/>
-<element name="S5" library="SparkFun-Electromechanical" package="TACTILE-PTH" value="SWITCH-MOMENTARY-2PTH" x="50.8" y="50.8" rot="R90"/>
-<element name="S6" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="101.6" y="48.26">
-<attribute name="PROD_ID" value="SWCH-09185" x="101.6" y="48.26" size="1.778" layer="27" display="off"/>
+<element name="U$5" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="90.17" y="58.42"/>
+<element name="U$6" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="156.21" y="60.96"/>
+<element name="S5" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="15.24" y="8.89" rot="R90">
+<attribute name="PROD_ID" value="SWCH-09185" x="15.24" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="LED1" library="SparkFun-LED" package="LED3MM" value="" x="43.18" y="63.5"/>
-<element name="LED2" library="SparkFun-LED" package="LED3MM" value="" x="58.42" y="63.5"/>
-<element name="LED3" library="SparkFun-LED" package="LED3MM" value="" x="50.8" y="63.5"/>
-<element name="LED4" library="SparkFun-LED" package="LED3MM" value="" x="35.56" y="63.5"/>
-<element name="VR8" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="13.97" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="13.97" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="S6" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="15.24" y="26.67" rot="R270">
+<attribute name="PROD_ID" value="SWCH-09185" x="15.24" y="26.67" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="VR1" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="24.13" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="24.13" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR8" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="72.39" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="72.39" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR2" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="34.29" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="34.29" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR1" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="82.55" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="82.55" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR3" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="44.45" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="44.45" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR2" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="92.71" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="92.71" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR4" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="54.61" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="54.61" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR3" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="102.87" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="102.87" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR5" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="64.77" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="64.77" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR4" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="113.03" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="113.03" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR6" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="74.93" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="74.93" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR5" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="123.19" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="123.19" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR7" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="85.09" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="85.09" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR6" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="133.35" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="133.35" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="VR9" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="95.25" y="19.05" rot="R90">
-<attribute name="PROD_ID" value="COM-11620" x="95.25" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="VR7" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="143.51" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="143.51" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="VR9" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="153.67" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="153.67" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="VR10" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="62.23" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="62.23" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="VR11" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="52.07" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="52.07" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="VR12" library="SparkFun-Electromechanical" package="SLIDER-SMALL" value="" x="41.91" y="19.05" rot="R90">
+<attribute name="PROD_ID" value="COM-11620" x="41.91" y="19.05" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="S1" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="29.21" y="26.67" rot="R90">
+<attribute name="PROD_ID" value="SWCH-09185" x="29.21" y="26.67" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="29.21" y="8.89" rot="R90">
+<attribute name="PROD_ID" value="SWCH-09185" x="29.21" y="8.89" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="7.62" y="-62.23">
+<attribute name="PROD_ID" value="SWCH-09185" x="7.62" y="-62.23" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>
@@ -734,7 +697,7 @@ design rules under a new name.</description>
 <signal name="VDDC">
 <contactref element="U$1" pad="30"/>
 <contactref element="U$1" pad="29"/>
-<wire x1="73.66" y1="17.78" x2="76.2" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="130.81" y1="17.78" x2="133.35" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB1">
 <contactref element="U$1" pad="27"/>
@@ -757,7 +720,7 @@ design rules under a new name.</description>
 <signal name="VDDA">
 <contactref element="U$1" pad="21"/>
 <contactref element="U$1" pad="15"/>
-<wire x1="38.1" y1="17.78" x2="53.34" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="95.25" y1="17.78" x2="110.49" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PA3">
 <contactref element="U$1" pad="19"/>
@@ -792,7 +755,7 @@ design rules under a new name.</description>
 <signal name="VDD">
 <contactref element="U$1" pad="7"/>
 <contactref element="U$1" pad="1"/>
-<wire x1="2.54" y1="17.78" x2="17.78" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="59.69" y1="17.78" x2="74.93" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PB9">
 <contactref element="U$1" pad="5"/>
@@ -814,12 +777,12 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="20"/>
 <contactref element="U$1" pad="14"/>
 <contactref element="U$1" pad="6"/>
-<wire x1="83.82" y1="17.78" x2="101.6" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="81.28" y1="17.78" x2="83.82" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="71.12" y1="17.78" x2="81.28" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="50.8" y1="17.78" x2="71.12" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="35.56" y1="17.78" x2="50.8" y2="17.78" width="0" layer="19" extent="1-1"/>
-<wire x1="15.24" y1="17.78" x2="35.56" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="140.97" y1="17.78" x2="158.75" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="138.43" y1="17.78" x2="140.97" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="128.27" y1="17.78" x2="138.43" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="107.95" y1="17.78" x2="128.27" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="92.71" y1="17.78" x2="107.95" y2="17.78" width="0" layer="19" extent="1-1"/>
+<wire x1="72.39" y1="17.78" x2="92.71" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LOUT+-">
 <contactref element="U$1" pad="39"/>

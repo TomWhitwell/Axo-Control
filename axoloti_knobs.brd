@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -14,7 +14,7 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
@@ -141,8 +141,10 @@
 <wire x1="66.26" y1="24.13" x2="66.26" y2="50" width="0" layer="20"/>
 <wire x1="66.26" y1="50" x2="48.26" y2="50" width="0" layer="20"/>
 <wire x1="48.26" y1="50" x2="48.26" y2="32" width="0" layer="20"/>
-<wire x1="48.26" y1="32" x2="0" y2="32" width="0" layer="20"/>
-<wire x1="0" y1="32" x2="0" y2="0" width="0" layer="20"/>
+<wire x1="48.26" y1="32" x2="7.62" y2="32" width="0" layer="20"/>
+<wire x1="7.62" y1="32" x2="7.62" y2="50" width="0" layer="20"/>
+<wire x1="7.62" y1="50" x2="0" y2="50" width="0" layer="20"/>
+<wire x1="0" y1="50" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="SparkFun-Connectors">
@@ -725,22 +727,23 @@ design rules under a new name.</description>
 <element name="U$2" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="52.07" y="39.7"/>
 <element name="U$3" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="38.1" y="9.6"/>
 <element name="U$4" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="156.21" y="9.6"/>
-<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="118.11" y="12.7" rot="R90">
-<attribute name="PROD_ID" value="SWCH-09185" x="118.11" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="S2" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="118.11" y="11.43" rot="R90">
+<attribute name="PROD_ID" value="SWCH-09185" x="118.11" y="11.43" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="132.08" y="12.7" rot="R90">
-<attribute name="PROD_ID" value="SWCH-09185" x="132.08" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="S3" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="132.08" y="11.43" rot="R90">
+<attribute name="PROD_ID" value="SWCH-09185" x="132.08" y="11.43" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="S4" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="146.05" y="12.7" rot="R90">
-<attribute name="PROD_ID" value="SWCH-09185" x="146.05" y="12.7" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="S4" library="SparkFun-Electromechanical" package="TACTILE-PTH-12MM" value="SWITCH-MOMENTARY-212MM" x="146.05" y="11.43" rot="R90">
+<attribute name="PROD_ID" value="SWCH-09185" x="146.05" y="11.43" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="LED2" library="SparkFun-LED" package="LED3MM" value="" x="78.74" y="31.75"/>
-<element name="LED3" library="SparkFun-LED" package="LED3MM" value="" x="93.98" y="31.75"/>
-<element name="LED4" library="SparkFun-LED" package="LED3MM" value="" x="86.36" y="31.75"/>
+<element name="LED2" library="SparkFun-LED" package="LED3MM" value="" x="118.11" y="21.59"/>
+<element name="LED3" library="SparkFun-LED" package="LED3MM" value="" x="146.05" y="21.59"/>
+<element name="LED4" library="SparkFun-LED" package="LED3MM" value="" x="132.08" y="21.59"/>
 <element name="U$5" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="3.81" y="8.33"/>
 <element name="VR7" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="59.69" y="44.45"/>
 <element name="VR8" library="MusicThingModular" package="9MM_SNAP-IN_POT" value="" x="44.45" y="21.59"/>
 <element name="U$7" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="156.21" y="45.16"/>
+<element name="U$6" library="MusicThingModular" package="MOUNTING_HOLE" value="" x="3.81" y="45.16"/>
 </elements>
 <signals>
 <signal name="RIN+">

@@ -1998,6 +1998,14 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <sheets>
 <sheet>
 <plain>
+<text x="106.68" y="106.68" size="1.778" layer="91">Parts: 
+B3F-4050 = 12mm square tactile switches 
+B32-1310 = black keycap 
+B32-1320 = orange 
+B32-1330 = yellow 
+B32-1360 = white
+B32-1380 = red 
+11mm spacer bolts </text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="12.7" y="53.34"/>
@@ -2288,4 +2296,10 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
