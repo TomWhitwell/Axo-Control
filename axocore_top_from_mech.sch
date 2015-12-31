@@ -2083,23 +2083,23 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <sheets>
 <sheet>
 <plain>
-<text x="-35.56" y="96.52" size="1.778" layer="91">Parts: 
+<text x="-35.56" y="96.52" size="1.016" layer="91">Parts: 
 PS3 thumb joystick 
-
-Pots: 
-5-50k Linear
-D Shaft 
+6 x 10k Linear D Shaft Pots 
 Bourns PTV09A-4020F-B103
 Alps RK09K11310KB
-
-
-B3F-4050 = 12mm square tactile switches 
+3 x 12mm square tactile switches
+B3F-4050 = switch 
 B32-1310 = black keycap 
 B32-1320 = orange 
 B32-1330 = yellow 
 B32-1360 = white
 B32-1380 = red 
-11mm spacer bolts </text>
+4 x 1k Resistors
+4 x 3mm LEDs
+4 x 11mm M3 Hex Standoffs
+2 x 2 pin Female Header 571-215297-2
+40 pin Female Header</text>
 </plain>
 <instances>
 <instance part="X1" gate="G$1" x="53.34" y="48.26"/>
