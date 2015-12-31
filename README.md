@@ -9,7 +9,7 @@ This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti
 - 9mm vertical pots 
 - Linear taper, any value from 5k to 50k should be fine
 - D Shaft (or whatever is suitable for your knobs)
-- Try: Bourns PTV09A-4020F-B103 or Alps RK09K11310KB
+- Try: Bourns PTV09A-4020F-B103 or Alps RK09K1130C79
 - Or Alpha 9mm from [Thonk](https://www.thonk.co.uk/shop/alpha-9mm-pots/) 
 - NB: If you can't find the Joystick, there is a space for a 7th pot underneath
 
