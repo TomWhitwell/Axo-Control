@@ -17,6 +17,7 @@ This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti
 - Omron B3F-4050 is the right switch, but it seems to be a fairly standard layout 
 - The board also has space for standard little 6mm tactile switches
 - You can get keycaps for the Omron 12mm switches: Black: B32-1310, Orange:  B32-1320, Yellow: B32-1330, White: B32-1360, Red: B32-1380
+- Alternatively, Multicomp MCDTS2-4R switch, and Black: KTSC-21K, White: KTSC-21I, Yellow: KTSC-21Y, Red: KTSC-21R. (Unconfirmed)
 
 4 x 1k Resistors for LEDs (use higher values - 5k to 10k if you have ultrabright LEDs) 
 
