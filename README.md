@@ -1,6 +1,8 @@
 # Control board for Axoloti 
 
-This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti.com/).  It is not authorised or approved by Axoloti.  
+This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti.com/).  It is not authorised or approved by Axoloti. 
+
+Quick demo video: https://www.instagram.com/p/BAqbNhdjmaf/  
 
 ##BOM  
 1 x PS2/3 analogue joystick, available from [Sparkfun](https://www.sparkfun.com/products/9032) or [Cool Components](https://www.coolcomponents.co.uk/thumb-joystick.html)  
@@ -14,10 +16,9 @@ This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti
 - NB: If you can't find the Joystick, there is a space for a 7th pot underneath
 
 3 x 12mm square tactile switches
-- Omron B3F-4050 is the right switch, but it seems to be a fairly standard layout 
+- Multicomp MCDTS2-4R is the right switch, but it seems to be a fairly standard layout 
 - The board also has space for standard little 6mm tactile switches
-- You can get keycaps for the Omron 12mm switches: Black: B32-1310, Orange:  B32-1320, Yellow: B32-1330, White: B32-1360, Red: B32-1380
-- Alternatively, Multicomp MCDTS2-4R switch, and Black: KTSC-21K, White: KTSC-21I, Yellow: KTSC-21Y, Red: KTSC-21R. (Unconfirmed)
+- You can get keycaps for the Omron 12mm switches:Black: KTSC-21K, White: KTSC-21I, Yellow: KTSC-21Y, Red: KTSC-21R. (
 
 4 x 1k Resistors for LEDs (use higher values - 5k to 10k if you have ultrabright LEDs) 
 
@@ -32,6 +33,8 @@ This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti
 1 x 40 pin Male Header to mount on the Control board
 
 ##STATUS 
+January 2016: Board built, works well. OSHPark project here: https://oshpark.com/shared_projects/XJm2ysZW  
+Video here: https://www.instagram.com/p/BAqbNhdjmaf/
 December 2015: Design completed for Rev1 board, prototypes ordered from OSH Park. Design, BOM, Layout NOT VERIFIED. 
 
 ##LICENSE 
