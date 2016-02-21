@@ -34,7 +34,7 @@ Quick demo video: https://www.instagram.com/p/BAqbNhdjmaf/
 
 ##STATUS 
 January 2016: Board built, works well. OSHPark project here: https://oshpark.com/shared_projects/XJm2ysZW  
-Video here: https://www.instagram.com/p/BAqbNhdjmaf/
+Video here: https://www.instagram.com/p/BAqbNhdjmaf/   
 December 2015: Design completed for Rev1 board, prototypes ordered from OSH Park. Design, BOM, Layout NOT VERIFIED. 
 
 ##LICENSE 
