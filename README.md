@@ -26,7 +26,7 @@ Quick demo video: https://www.instagram.com/p/BAqbNhdjmaf/
 
 4 x 11mm M3 Hex Standoffs to connect the control board to the main Axoloti Core PCB
 
-2 x 2 pin Female Header 571-215297-2 to mount on the back of the Control board to provide support by connecting to pins on the X3 and X4 headers. There is no electrical connection here. 
+*NB: Ignore these headers: The way the board has come out, it's impossible to solder them in, and the board is perfectly strong without them.*  2 x 2 pin Female Header 571-215297-2 to mount on the back of the Control board to provide support by connecting to pins on the X3 and X4 headers. There is no electrical connection here. 
 
 1 x 40 pin Female Header to mount on the Axoloti core 
 
