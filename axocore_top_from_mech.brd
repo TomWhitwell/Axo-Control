@@ -24,8 +24,8 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="9" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -146,26 +146,6 @@
 </layers>
 <board>
 <plain>
-<wire x1="3" y1="0" x2="157" y2="0" width="0" layer="21"/>
-<wire x1="157" y1="0" x2="160" y2="3" width="0" layer="21" curve="90"/>
-<wire x1="160" y1="3" x2="160" y2="47" width="0" layer="21"/>
-<wire x1="160" y1="47" x2="157" y2="50" width="0" layer="21" curve="90"/>
-<wire x1="157" y1="50" x2="152.4" y2="50" width="0" layer="21"/>
-<wire x1="152.4" y1="50" x2="152.4" y2="25.4" width="0" layer="21"/>
-<wire x1="152.4" y1="25.4" x2="113.03" y2="25.4" width="0" layer="21"/>
-<wire x1="113.03" y1="25.4" x2="113.03" y2="50" width="0" layer="21"/>
-<wire x1="113.03" y1="50" x2="76.2" y2="50" width="0" layer="21"/>
-<wire x1="76.2" y1="50" x2="76.2" y2="30.48" width="0" layer="21"/>
-<wire x1="76.2" y1="30.48" x2="68.58" y2="30.48" width="0" layer="21"/>
-<wire x1="68.58" y1="30.48" x2="68.58" y2="50" width="0" layer="21"/>
-<wire x1="68.58" y1="50" x2="49.53" y2="50" width="0" layer="21"/>
-<wire x1="49.53" y1="50" x2="49.53" y2="33.02" width="0" layer="21"/>
-<wire x1="49.53" y1="33.02" x2="7.62" y2="33.02" width="0" layer="21"/>
-<wire x1="7.62" y1="33.02" x2="7.62" y2="50" width="0" layer="21"/>
-<wire x1="7.62" y1="50" x2="3" y2="50" width="0" layer="21"/>
-<wire x1="3" y1="50" x2="0" y2="47" width="0" layer="21" curve="90"/>
-<wire x1="0" y1="47" x2="0" y2="3" width="0" layer="21"/>
-<wire x1="0" y1="3" x2="3" y2="0" width="0" layer="21" curve="90"/>
 <text x="51.435" y="2.54" size="1.27" layer="26" font="vector" ratio="15" rot="MR90">VDD</text>
 <text x="53.975" y="2.54" size="1.27" layer="26" font="vector" ratio="15" rot="MR90">PB6</text>
 <text x="56.515" y="2.54" size="1.27" layer="26" font="vector" ratio="15" rot="MR90">PB7</text>
@@ -246,22 +226,22 @@
 <text x="121.285" y="2.54" size="1.27" layer="51" font="vector" ratio="18" rot="R90">GND</text>
 <text x="123.19" y="2.54" size="1.27" layer="51" font="vector" ratio="18" rot="R45">VDDC</text>
 <text x="125.73" y="2.54" size="1.27" layer="51" font="vector" ratio="18" rot="R45">VDDC</text>
-<text x="8.255" y="3.81" size="1.016" layer="21" rot="R90">PA0&gt;&gt;</text>
-<text x="8.89" y="2.54" size="1.016" layer="21">PA1&gt;&gt;</text>
-<text x="41.91" y="7.62" size="1.016" layer="21">PA2</text>
-<text x="68.58" y="7.62" size="1.016" layer="21">PA3</text>
-<text x="95.25" y="7.62" size="1.016" layer="21">PA4</text>
-<text x="50.8" y="34.29" size="1.016" layer="21">PA5</text>
-<text x="77.47" y="34.29" size="1.016" layer="21">PA6</text>
-<text x="96.52" y="34.29" size="1.016" layer="21">PA7</text>
-<text x="41.91" y="29.21" size="1.016" layer="21">PB0</text>
-<text x="116.84" y="24.13" size="1.016" layer="21">PB1</text>
-<text x="129.54" y="24.13" size="1.016" layer="21">PB8</text>
-<text x="142.24" y="24.13" size="1.016" layer="21">PB9</text>
-<text x="31.75" y="6.35" size="1.016" layer="21">PC0</text>
-<text x="123.825" y="5.715" size="1.016" layer="21">PC1</text>
-<text x="136.8425" y="5.715" size="1.016" layer="21">PC2</text>
-<text x="149.5425" y="5.715" size="1.016" layer="21">PC3</text>
+<text x="5.08" y="14.9225" size="2.1844" layer="21" rot="R90">PA0&gt;&gt;</text>
+<text x="16.51" y="1.27" size="2.1844" layer="21">PA1&gt;&gt;</text>
+<text x="49.53" y="3.81" size="2.1844" layer="21" align="bottom-center">PA2</text>
+<text x="76.2" y="3.81" size="2.1844" layer="21" align="bottom-center">PA3</text>
+<text x="102.87" y="3.81" size="2.1844" layer="21" align="bottom-center">PA4</text>
+<text x="59.69" y="29.845" size="2.1844" layer="21" align="bottom-center">PA5</text>
+<text x="81.28" y="29.845" size="2.1844" layer="21" align="bottom-center">PA6</text>
+<text x="104.14" y="29.845" size="2.1844" layer="21" align="bottom-center">PA7</text>
+<text x="42.545" y="27.94" size="1.778" layer="21" align="center-left">PB0</text>
+<text x="116.84" y="22.86" size="1.778" layer="21" align="center-left">PB1</text>
+<text x="129.54" y="22.86" size="1.778" layer="21" align="center-left">PB8</text>
+<text x="142.24" y="22.86" size="1.778" layer="21" align="center-left">PB9</text>
+<text x="29.845" y="6.35" size="1.778" layer="21">PC0</text>
+<text x="120.65" y="3.81" size="2.1844" layer="21" align="bottom-center">PC1</text>
+<text x="133.35" y="3.81" size="2.1844" layer="21" align="bottom-center">PC2</text>
+<text x="146.05" y="3.81" size="2.1844" layer="21" align="bottom-center">PC3</text>
 <polygon width="0.0508" layer="21">
 <vertex x="8.595359375" y="27.46501875"/>
 <vertex x="8.595359375" y="27.251659375"/>
@@ -1005,8 +985,6 @@ Ezra Buchla, Brian Crabtree, Kelli Cain,
 Suzanne Ciani, Tom Erbe, Carl Stone, Rob Hordijk, 
 Hans Nordelius, Magnus Kjellander,  Bjorn 
 Leander, Christopher Richardson, Bengt Lilja.</text>
-<text x="159.0675" y="15.24" size="2.286" layer="21" rot="R90">AXOLOTI
-CONTROL 1</text>
 <wire x1="3" y1="0" x2="157" y2="0" width="0" layer="20"/>
 <wire x1="157" y1="0" x2="160" y2="3" width="0" layer="20" curve="90"/>
 <wire x1="160" y1="3" x2="160" y2="47" width="0" layer="20"/>
