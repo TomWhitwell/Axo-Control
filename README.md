@@ -2,7 +2,8 @@
 
 This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti.com/).  It is not authorised or approved by Axoloti. 
 
-Quick demo video: https://www.instagram.com/p/BAqbNhdjmaf/  
+Quick demo video: https://www.instagram.com/p/BAqbNhdjmaf/   
+Another demo video: https://www.youtube.com/watch?v=lhx-O6MQIug  
 
 ##BOM  
 1 x PS2/3 analogue joystick, available from [Sparkfun](https://www.sparkfun.com/products/9032) or [Cool Components](https://www.coolcomponents.co.uk/thumb-joystick.html)  
