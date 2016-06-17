@@ -1,0 +1,1179 @@
+<patch-1.0>
+   <obj type="disp/ibar 16" sha="6998eafb11a17e8569492b9ac4fa9710eb907cb8" uuid="302bfed4cde8894229679ce81f6b8a5c5212dd98" name="ibar_1" x="280" y="0">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_1" x="28" y="14">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA5 (ADC1_IN5)"/>
+      </attribs>
+   </obj>
+   <obj type="patch/modsource" sha="e0ee10b85ac38b70a682a69ace823af08f4b707d" uuid="c98f018a8d204ef6df1bf7008af6fd7d20f12fe4" name="modsource_1" x="182" y="42">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="lfo/square" sha="b4420b58ca2ae5ece53d53540bc91bc9ed7a4b83" uuid="de6909eb64db13af5b43f979a4c130024b3a4793" name="square_1" x="84" y="70">
+      <params>
+         <frac32.s.map name="pitch" value="34.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/or 2" sha="6941575503e8a946c74e5388ec4e6a97468ae3c5" uuid="3805d3c84d30032a44fbdbe42d9a2988a1790a3e" name="or_1" x="364" y="70">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_1" x="448" y="70">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB1"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="logic/or 2" sha="6941575503e8a946c74e5388ec4e6a97468ae3c5" uuid="3805d3c84d30032a44fbdbe42d9a2988a1790a3e" name="or_2" x="364" y="126">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/toggle" sha="f5742cc9eee76fae90a4e570c34596dd327b6c28" uuid="42b8134fa729d54bfc8d62d6ef3fa99498c1de99" name="toggle_1" x="14" y="140">
+      <params>
+         <bool32.tgl name="b" value="1"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_2" x="196" y="154">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB0"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_3" x="518" y="154">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC1"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="logic/counter" sha="519c79f42a7c84352830b08e68696ecbf5d0bd52" uuid="7a141ba82230e54e5f5cd12da5dbe5a74ba854a5" name="counter_2" x="616" y="168">
+      <params>
+         <int32 name="maximum" value="3"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/+1" sha="2e8219f3e40a6f1b07008f9f6233b252761e8f09" uuid="13c1a4574bb81783beb8839e81782b9a34e3fc17" name="+1_1" x="700" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="patch/preset" sha="9c8ff28c68afe4bd71bf0c853e95d51447cd628e" uuid="f7916cc01d45a5b1bbd444216031e0a02cc0b94c" name="preset_1" x="756" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/or 2" sha="6941575503e8a946c74e5388ec4e6a97468ae3c5" uuid="3805d3c84d30032a44fbdbe42d9a2988a1790a3e" name="or_3" x="364" y="182">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="midi/out/clock" sha="b1a8f7267317fa583225dc218f285fe306220d1b" uuid="12b916e835bb6fc9fa4f2c858d1d1a72d5cf6d08" name="clock_1" x="42" y="196">
+      <params>
+         <frac32.u.map name="bpm" value="3.0">
+            <modulators>
+               <modulation sourceName="modsource_1" modName="" value="39.0"/>
+            </modulators>
+         </frac32.u.map>
+      </params>
+      <attribs>
+         <combo attributeName="device" selection="din"/>
+      </attribs>
+   </obj>
+   <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="i_4" x="168" y="238">
+      <params/>
+      <attribs>
+         <spinner attributeName="denominator" value="16"/>
+      </attribs>
+   </obj>
+   <obj type="sel/sel b 16 4t pulse" sha="1eea2929191589a94e2faf49a37a52b267508cd2" uuid="888c8955ae75a9e7e3ed641fa9084d6b52e9fee9" name="sel_1" x="308" y="266">
+      <params>
+         <bin16 name="p1" onParent="true" value="257">
+            <presets>
+               <preset index="1">
+                  <i i="257"/>
+               </preset>
+               <preset index="2">
+                  <i i="257"/>
+               </preset>
+               <preset index="3">
+                  <i i="257"/>
+               </preset>
+               <preset index="4">
+                  <i i="257"/>
+               </preset>
+            </presets>
+         </bin16>
+         <bin16 name="p2" value="10256">
+            <presets>
+               <preset index="1">
+                  <i i="4112"/>
+               </preset>
+               <preset index="2">
+                  <i i="10256"/>
+               </preset>
+               <preset index="3">
+                  <i i="21520"/>
+               </preset>
+               <preset index="4">
+                  <i i="46096"/>
+               </preset>
+            </presets>
+         </bin16>
+         <bin16 name="p3" value="14043">
+            <presets>
+               <preset index="1">
+                  <i i="17476"/>
+               </preset>
+               <preset index="2">
+                  <i i="14043"/>
+               </preset>
+               <preset index="3">
+                  <i i="21845"/>
+               </preset>
+               <preset index="4">
+                  <i i="20753"/>
+               </preset>
+            </presets>
+         </bin16>
+         <bin16 name="p4" value="53833">
+            <presets>
+               <preset index="1">
+                  <i i="1"/>
+               </preset>
+               <preset index="2">
+                  <i i="53833"/>
+               </preset>
+               <preset index="3">
+                  <i i="9284"/>
+               </preset>
+               <preset index="4">
+                  <i i="8715"/>
+               </preset>
+            </presets>
+         </bin16>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/i" sha="e98a25a12afc62efc1991c3bb5290ccdf7214102" uuid="5e35fd0c62d81e70017289250cf28edd26e19e4a" name="i_1" x="728" y="266">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="sel/sel b 16 2t pulse" sha="59a9699ce5f71cb3d6deaa8ea30243f0c0c3a159" uuid="973e7030204ae3f80968263d37625c6672f91cb1" name="sel_2" x="14" y="322">
+      <params>
+         <bin16 name="p1" value="4369"/>
+         <bin16 name="p2" value="65535"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="disp/bool" sha="330cd7d2342f59124b04a39d118a0ab97185ecaa" uuid="a0ee71d48208b71752cbb8c05e55145106ef3946" name="bool_1" x="224" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" sha="f800d3ed7fe673260466ec79f308fff29bb2f77c" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_1" x="532" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" sha="f800d3ed7fe673260466ec79f308fff29bb2f77c" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_2" x="588" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" sha="f800d3ed7fe673260466ec79f308fff29bb2f77c" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_3" x="644" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/vu" sha="f800d3ed7fe673260466ec79f308fff29bb2f77c" uuid="6899a21ca2efcb3f63aa03ed7f61b5fe5a92e871" name="vu_4" x="700" y="350">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_8" x="112" y="420">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA4 (ADC1_IN4)"/>
+      </attribs>
+   </obj>
+   <obj type="osc/square cheap" sha="2224fbc587d65d1d595611fb2b32037ed894d990" uuid="58dc60ffca7e6c5029f12ec68787945c669b7a8f" name="square_2" x="252" y="420">
+      <params>
+         <frac32.s.map name="pitch" value="-41.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="pulse/lfsrburst 6" sha="f1be316405e48b2f01eb462af874f09c40f1cdb1" uuid="c4573a250734ef1f0bfe5b8e18ceb5724bb91249" name="lfsrburst_1" x="364" y="420">
+      <params/>
+      <attribs>
+         <combo attributeName="polynomial" selection="0x108"/>
+      </attribs>
+   </obj>
+   <obj type="env/ahd m" sha="37f06c85b287c96369d67bcccbf212cea1ef68b" uuid="26310a6ba00395d4adb87ebf9db0de38d53d23da" name="ad_1" x="462" y="420">
+      <params>
+         <frac32.u.map name="a" value="0.0"/>
+         <frac32.u.map name="d" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="env/ahd m" sha="37f06c85b287c96369d67bcccbf212cea1ef68b" uuid="26310a6ba00395d4adb87ebf9db0de38d53d23da" name="ad_2" x="560" y="420">
+      <params>
+         <frac32.u.map name="a" value="0.0"/>
+         <frac32.u.map name="d" value="0.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/gain" sha="479fc45a4d36c8ec5e891834d52fa725d1c27de7" uuid="6b4dd3da49f98e54900f6c20031f38f4624fa364" name="gain_1" x="658" y="420">
+      <params>
+         <frac32.u.map name="amp" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1" x="756" y="420">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="938" y="434">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_6" x="1064" y="448">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA7 (ADC1_IN7)"/>
+      </attribs>
+   </obj>
+   <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_1" x="126" y="476">
+      <params/>
+      <attribs>
+         <spinner attributeName="denominator" value="34"/>
+      </attribs>
+   </obj>
+   <obj type="pulse/lfsrburst 8" sha="da0febb94333bdb174ec5fac26bb1f481cfcb59f" uuid="d2ac5ea30b4c0caeaddfe92ce3134f1055875b15" name="lfsrburst_2" x="364" y="476">
+      <params/>
+      <attribs>
+         <combo attributeName="polynomial" selection="0x1E5"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_2" x="756" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="osc/square cheap" sha="2224fbc587d65d1d595611fb2b32037ed894d990" uuid="58dc60ffca7e6c5029f12ec68787945c669b7a8f" name="square_3" x="252" y="504">
+      <params>
+         <frac32.s.map name="pitch" value="-38.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="math/gain" sha="479fc45a4d36c8ec5e891834d52fa725d1c27de7" uuid="6b4dd3da49f98e54900f6c20031f38f4624fa364" name="gain_2" x="658" y="504">
+      <params>
+         <frac32.u.map name="amp" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_2" x="98" y="546">
+      <params/>
+      <attribs>
+         <spinner attributeName="value" value="2"/>
+      </attribs>
+   </obj>
+   <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_1" x="182" y="546">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="dist/soft" sha="74960c930c4b6a5c630156778f889d4de48dbdbf" uuid="e680d76a805e4866027cdf654c7efd8b2e54622" name="soft_1" x="714" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/cos" sha="1613f156e137151e931c5e21a08c593954cd8c3" uuid="a2ba1ca8d10b854e06728c088c43409866624fc1" name="sin_1" x="770" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/sin" sha="51996a69a9846bb8ba863c4e645fc3024fd55a2" uuid="3fd3c55bdecb474393c99b2a5b01e9bed143eca7" name="sin_2" x="826" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="dist/soft" sha="74960c930c4b6a5c630156778f889d4de48dbdbf" uuid="e680d76a805e4866027cdf654c7efd8b2e54622" name="soft_2" x="882" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/xfade" sha="46677d62cd61f18b6996ffad67cd94b74cd98f2d" uuid="375dc91d218e96cdc9cbc7e92adb48f705ef701a" name="xfade_1" x="980" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/xfade" sha="46677d62cd61f18b6996ffad67cd94b74cd98f2d" uuid="375dc91d218e96cdc9cbc7e92adb48f705ef701a" name="xfade_2" x="1078" y="574">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_2" x="364" y="588">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA0 (ADC1_IN0)"/>
+      </attribs>
+   </obj>
+   <patcher type="patch/patcher" sha="da39a3ee5e6b4b0d3255bfef95601890afd80709" uuid="a245c220448000c901caef03c8b07740d533914a" name="patcher_1" x="574" y="588">
+      <params/>
+      <attribs/>
+      <subpatch>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="70" y="14">
+            <params>
+               <frac32.s.map name="pitch" value="-37.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet b" sha="17c8e188371661163bfa55cea9974eecb785fb06" uuid="3b0d3eacb5bb978cb05d1372aa2714d5a4790844" name="TRIG" x="182" y="56">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet f" sha="8e69e1ab7ccd8afaefdc23146c50149809b64955" uuid="5c585d2dcd9c05631e345ac09626a22a639d7c13" name="DECAY" x="294" y="56">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="env/ahd m" sha="37f06c85b287c96369d67bcccbf212cea1ef68b" uuid="26310a6ba00395d4adb87ebf9db0de38d53d23da" name="ad_3" x="210" y="112">
+            <params>
+               <frac32.u.map name="a" value="0.0"/>
+               <frac32.u.map name="d" value="11.0">
+                  <presets/>
+               </frac32.u.map>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_2" x="70" y="126">
+            <params>
+               <frac32.s.map name="pitch" value="-20.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_3" x="378" y="126">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" sha="9e7e04867e1d37837b0924c9bf18c44ac68602e6" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="OUT" x="462" y="126">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/gain" sha="479fc45a4d36c8ec5e891834d52fa725d1c27de7" uuid="6b4dd3da49f98e54900f6c20031f38f4624fa364" name="gain_1" x="350" y="182">
+            <params>
+               <frac32.u.map name="amp" value="29.5"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_5" x="70" y="252">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="3"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_6" x="154" y="252">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="4"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_7" x="238" y="252">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="2"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_8" x="322" y="252">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="5"/>
+            </attribs>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_4" x="98" y="308">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_5" x="154" y="308">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_6" x="210" y="308">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_7" x="280" y="308">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet f" sha="8e69e1ab7ccd8afaefdc23146c50149809b64955" uuid="5c585d2dcd9c05631e345ac09626a22a639d7c13" name="KNOB" x="14" y="336">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_5" x="70" y="392">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="24"/>
+            </attribs>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_7" x="182" y="392">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="15"/>
+            </attribs>
+         </obj>
+         <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_4" x="308" y="392">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_6" x="70" y="462">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="42"/>
+            </attribs>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_8" x="182" y="462">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="23"/>
+            </attribs>
+         </obj>
+         <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_5" x="322" y="462">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="sine_2" outlet="wave"/>
+               <dest obj="vca_3" inlet="a"/>
+            </net>
+            <net>
+               <source obj="KNOB" outlet="inlet"/>
+               <dest obj="divremc_5" inlet="a"/>
+               <dest obj="divremc_6" inlet="a"/>
+               <dest obj="divremc_7" inlet="a"/>
+               <dest obj="divremc_8" inlet="a"/>
+            </net>
+            <net>
+               <source obj="sine_1" outlet="wave"/>
+               <dest obj="vca_4" inlet="a"/>
+               <dest obj="vca_5" inlet="a"/>
+            </net>
+            <net>
+               <source obj="vca_4" outlet="o"/>
+               <dest obj="sine_2" inlet="phase"/>
+            </net>
+            <net>
+               <source obj="vca_5" outlet="o"/>
+               <dest obj="sine_2" inlet="freq"/>
+            </net>
+            <net>
+               <source obj="i_5" outlet="out"/>
+               <dest obj="*_4" inlet="a"/>
+            </net>
+            <net>
+               <source obj="i_6" outlet="out"/>
+               <dest obj="*_5" inlet="a"/>
+            </net>
+            <net>
+               <source obj="i_7" outlet="out"/>
+               <dest obj="*_6" inlet="a"/>
+            </net>
+            <net>
+               <source obj="*_4" outlet="result"/>
+               <dest obj="sine_1" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="divremc_5" outlet="rem"/>
+               <dest obj="*_4" inlet="b"/>
+            </net>
+            <net>
+               <source obj="divremc_7" outlet="rem"/>
+               <dest obj="*_5" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_5" outlet="result"/>
+               <dest obj="vca_4" inlet="v"/>
+            </net>
+            <net>
+               <source obj="divremc_6" outlet="rem"/>
+               <dest obj="*_6" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_6" outlet="result"/>
+               <dest obj="sine_2" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="i_8" outlet="out"/>
+               <dest obj="*_7" inlet="a"/>
+            </net>
+            <net>
+               <source obj="*_7" outlet="result"/>
+               <dest obj="vca_5" inlet="v"/>
+            </net>
+            <net>
+               <source obj="divremc_8" outlet="rem"/>
+               <dest obj="*_7" inlet="b"/>
+            </net>
+            <net>
+               <source obj="vca_3" outlet="o"/>
+               <dest obj="OUT" inlet="outlet"/>
+            </net>
+            <net>
+               <source obj="TRIG" outlet="inlet"/>
+               <dest obj="ad_3" inlet="gate"/>
+            </net>
+            <net>
+               <source obj="DECAY" outlet="inlet"/>
+               <dest obj="ad_3" inlet="d"/>
+            </net>
+            <net>
+               <source obj="ad_3" outlet="env"/>
+               <dest obj="gain_1" inlet="in"/>
+            </net>
+            <net>
+               <source obj="gain_1" outlet="out"/>
+               <dest obj="vca_3" inlet="v"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+      </subpatch>
+   </patcher>
+   <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_2" x="126" y="602">
+      <params/>
+      <attribs>
+         <spinner attributeName="denominator" value="16"/>
+      </attribs>
+   </obj>
+   <obj type="dist/rectifier" sha="dd59319d5d9fb8412e8bc1ce69ec96277160cf0c" uuid="a994d72e4491dedd2655b7a06a4a3f38fcca68d2" name="rectifier_1" x="714" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/sin" sha="51996a69a9846bb8ba863c4e645fc3024fd55a2" uuid="3fd3c55bdecb474393c99b2a5b01e9bed143eca7" name="sin_3" x="784" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="dist/soft" sha="74960c930c4b6a5c630156778f889d4de48dbdbf" uuid="e680d76a805e4866027cdf654c7efd8b2e54622" name="soft_3" x="840" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="dist/soft" sha="74960c930c4b6a5c630156778f889d4de48dbdbf" uuid="e680d76a805e4866027cdf654c7efd8b2e54622" name="soft_4" x="896" y="616">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_4" x="364" y="644">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA3 (ADC1_IN3)"/>
+      </attribs>
+   </obj>
+   <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_3" x="98" y="672">
+      <params/>
+      <attribs>
+         <spinner attributeName="value" value="4"/>
+      </attribs>
+   </obj>
+   <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_2" x="182" y="672">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 4" sha="6d667381bdeea6a139000a94f808f3e63efd414a" uuid="e6f9a0cc7aadc1b89516143cf1ccb79b3538d05a" name="mix_1" x="798" y="686">
+      <params>
+         <frac32.u.map name="gain1" value="46.0"/>
+         <frac32.u.map name="gain2" value="44.5"/>
+         <frac32.u.map name="gain3" value="64.0"/>
+         <frac32.u.map name="gain4" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="filter/lp1" sha="290a234e2f83eb072198d0158bcd5da02a3606c3" uuid="1b1fd7085e44d2b7b80b59b8d68796b909c1b2cc" name="lp1_1" x="1036" y="686">
+      <params>
+         <frac32.s.map name="freq" value="32.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <patcher type="patch/patcher" sha="da39a3ee5e6b4b0d3255bfef95601890afd80709" uuid="a245c220448000c901caef03c8b07740d533914a" name="FM_DRUM" x="574" y="700">
+      <params/>
+      <attribs/>
+      <subpatch>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="56" y="0">
+            <params>
+               <frac32.s.map name="pitch" value="-37.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet b" sha="17c8e188371661163bfa55cea9974eecb785fb06" uuid="3b0d3eacb5bb978cb05d1372aa2714d5a4790844" name="TRIG" x="168" y="42">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet f" sha="8e69e1ab7ccd8afaefdc23146c50149809b64955" uuid="5c585d2dcd9c05631e345ac09626a22a639d7c13" name="DECAY" x="280" y="42">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="env/ahd m" sha="37f06c85b287c96369d67bcccbf212cea1ef68b" uuid="26310a6ba00395d4adb87ebf9db0de38d53d23da" name="ad_3" x="196" y="98">
+            <params>
+               <frac32.u.map name="a" value="0.0"/>
+               <frac32.u.map name="d" value="10.0">
+                  <presets/>
+               </frac32.u.map>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_2" x="56" y="112">
+            <params>
+               <frac32.s.map name="pitch" value="-20.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_3" x="364" y="112">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/outlet a" sha="9e7e04867e1d37837b0924c9bf18c44ac68602e6" uuid="abd8c5fd3b0524a6630f65cad6dc27f6c58e2a3e" name="OUT" x="448" y="112">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/gain" sha="479fc45a4d36c8ec5e891834d52fa725d1c27de7" uuid="6b4dd3da49f98e54900f6c20031f38f4624fa364" name="gain_1" x="322" y="182">
+            <params>
+               <frac32.u.map name="amp" value="64.0"/>
+            </params>
+            <attribs/>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_5" x="56" y="238">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="3"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_6" x="140" y="238">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="4"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_7" x="224" y="238">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="2"/>
+            </attribs>
+         </obj>
+         <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_8" x="308" y="238">
+            <params/>
+            <attribs>
+               <spinner attributeName="value" value="5"/>
+            </attribs>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_4" x="84" y="294">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_5" x="140" y="294">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_6" x="196" y="294">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/*" sha="a9b400028f50234997d1b2f7a787b5b4b501c27f" uuid="6a31299e3a491edd8c4df0e809a519a35cc08a3b" name="*_7" x="266" y="294">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="patch/inlet f" sha="8e69e1ab7ccd8afaefdc23146c50149809b64955" uuid="5c585d2dcd9c05631e345ac09626a22a639d7c13" name="KNOB" x="0" y="322">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_5" x="56" y="378">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="24"/>
+            </attribs>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_7" x="168" y="378">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="15"/>
+            </attribs>
+         </obj>
+         <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_4" x="294" y="378">
+            <params/>
+            <attribs/>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_6" x="56" y="448">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="42"/>
+            </attribs>
+         </obj>
+         <obj type="math/divremc" sha="e05d21088634f9097b27f6de095eac6704de1457" uuid="fd7d945542e16344358136d7e22cffd5be704260" name="divremc_8" x="168" y="448">
+            <params/>
+            <attribs>
+               <spinner attributeName="denominator" value="23"/>
+            </attribs>
+         </obj>
+         <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_5" x="308" y="448">
+            <params/>
+            <attribs/>
+         </obj>
+         <nets>
+            <net>
+               <source obj="sine_2" outlet="wave"/>
+               <dest obj="vca_3" inlet="a"/>
+            </net>
+            <net>
+               <source obj="KNOB" outlet="inlet"/>
+               <dest obj="divremc_5" inlet="a"/>
+               <dest obj="divremc_6" inlet="a"/>
+               <dest obj="divremc_7" inlet="a"/>
+               <dest obj="divremc_8" inlet="a"/>
+            </net>
+            <net>
+               <source obj="sine_1" outlet="wave"/>
+               <dest obj="vca_4" inlet="a"/>
+               <dest obj="vca_5" inlet="a"/>
+            </net>
+            <net>
+               <source obj="vca_4" outlet="o"/>
+               <dest obj="sine_2" inlet="phase"/>
+            </net>
+            <net>
+               <source obj="vca_5" outlet="o"/>
+               <dest obj="sine_2" inlet="freq"/>
+            </net>
+            <net>
+               <source obj="i_5" outlet="out"/>
+               <dest obj="*_4" inlet="a"/>
+            </net>
+            <net>
+               <source obj="i_6" outlet="out"/>
+               <dest obj="*_5" inlet="a"/>
+            </net>
+            <net>
+               <source obj="i_7" outlet="out"/>
+               <dest obj="*_6" inlet="a"/>
+            </net>
+            <net>
+               <source obj="*_4" outlet="result"/>
+               <dest obj="sine_1" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="divremc_5" outlet="rem"/>
+               <dest obj="*_4" inlet="b"/>
+            </net>
+            <net>
+               <source obj="divremc_7" outlet="rem"/>
+               <dest obj="*_5" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_5" outlet="result"/>
+               <dest obj="vca_4" inlet="v"/>
+            </net>
+            <net>
+               <source obj="divremc_6" outlet="rem"/>
+               <dest obj="*_6" inlet="b"/>
+            </net>
+            <net>
+               <source obj="*_6" outlet="result"/>
+               <dest obj="sine_2" inlet="pitch"/>
+            </net>
+            <net>
+               <source obj="i_8" outlet="out"/>
+               <dest obj="*_7" inlet="a"/>
+            </net>
+            <net>
+               <source obj="*_7" outlet="result"/>
+               <dest obj="vca_5" inlet="v"/>
+            </net>
+            <net>
+               <source obj="divremc_8" outlet="rem"/>
+               <dest obj="*_7" inlet="b"/>
+            </net>
+            <net>
+               <source obj="vca_3" outlet="o"/>
+               <dest obj="OUT" inlet="outlet"/>
+            </net>
+            <net>
+               <source obj="TRIG" outlet="inlet"/>
+               <dest obj="ad_3" inlet="gate"/>
+            </net>
+            <net>
+               <source obj="DECAY" outlet="inlet"/>
+               <dest obj="ad_3" inlet="d"/>
+            </net>
+            <net>
+               <source obj="ad_3" outlet="env"/>
+               <dest obj="gain_1" inlet="in"/>
+            </net>
+            <net>
+               <source obj="gain_1" outlet="out"/>
+               <dest obj="vca_3" inlet="v"/>
+            </net>
+         </nets>
+         <settings>
+            <subpatchmode>no</subpatchmode>
+         </settings>
+         <notes><![CDATA[]]></notes>
+      </subpatch>
+   </patcher>
+   <obj type="stomps/reverb1" uuid="6e81e7f992c3263b7e94d97493b9d3e8f62559ba" name="obj_1" x="910" y="700">
+      <params>
+         <bool32.tgl name="on" value="1"/>
+         <frac32.u.map name="amt" value="15.5"/>
+         <frac32.u.map name="decay" value="5.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_3" x="364" y="714">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA1 (ADC1_IN1)"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/button1" sha="2d8a8388aa8ae748ba64967dc22e268e11146941" uuid="2f4fbacf3969a3a1ff9d23899566430051cb01f" name="button1_1" x="1218" y="728">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="patch/load" sha="7fe1625205bc84eae63cbeb5250b90396de93bb1" uuid="634bf1f8c313920d7f19fc402ba937fd1ee27802" name="load_1" x="1372" y="728">
+      <params/>
+      <attribs>
+         <table attributeName="filename" table="1.bin"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_4" x="112" y="770">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC2"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_5" x="364" y="770">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA2 (ADC1_IN2)"/>
+      </attribs>
+   </obj>
+   <obj type="mix/xfade" sha="46677d62cd61f18b6996ffad67cd94b74cd98f2d" uuid="375dc91d218e96cdc9cbc7e92adb48f705ef701a" name="xfade_3" x="1036" y="770">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/flipflop toggle" sha="3e483f67f78cab4aecc6bc5cf4e105e481839660" uuid="195e489e5fc3d275944b0de56c7a91c8641ea22a" name="flipflop_1" x="224" y="784">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_7" x="42" y="854">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC3"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_5" x="238" y="854">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB8"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="logic/samplehold" sha="689ed4c57ac833433f51438a8662f35fa84ce2d7" uuid="55479a62c4ed7e3536b6e6f339ce05a802a81b9d" name="samplehold_1" x="462" y="854">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/samplehold" sha="689ed4c57ac833433f51438a8662f35fa84ce2d7" uuid="55479a62c4ed7e3536b6e6f339ce05a802a81b9d" name="samplehold_2" x="616" y="854">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_7" x="994" y="868">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA6 (ADC1_IN6)"/>
+      </attribs>
+   </obj>
+   <obj type="logic/flipflop toggle" sha="3e483f67f78cab4aecc6bc5cf4e105e481839660" uuid="195e489e5fc3d275944b0de56c7a91c8641ea22a" name="flipflop_2" x="126" y="910">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_6" x="238" y="924">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB9"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <nets>
+      <net>
+         <source obj="i_4" outlet="rem"/>
+         <dest obj="sel_1" inlet="in"/>
+         <dest obj="ibar_1" inlet="in"/>
+         <dest obj="sel_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="xfade_3" outlet="o"/>
+         <dest obj="out_1" inlet="right"/>
+         <dest obj="out_1" inlet="left"/>
+      </net>
+      <net>
+         <source obj="sel_1" outlet="o2"/>
+         <dest obj="patcher_1" inlet="TRIG"/>
+         <dest obj="or_1" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="FM_DRUM" outlet="OUT"/>
+         <dest obj="rectifier_1" inlet="in"/>
+         <dest obj="xfade_2" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="patcher_1" outlet="OUT"/>
+         <dest obj="soft_1" inlet="in"/>
+         <dest obj="xfade_1" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="flipflop_1" outlet="o"/>
+         <dest obj="samplehold_1" inlet="s_h"/>
+         <dest obj="digital_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_3" outlet="out"/>
+         <dest obj="samplehold_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="samplehold_1" outlet="out"/>
+         <dest obj="FM_DRUM" inlet="DECAY"/>
+      </net>
+      <net>
+         <source obj="analog_2" outlet="out"/>
+         <dest obj="samplehold_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="digital_4" outlet="out"/>
+         <dest obj="flipflop_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="flipflop_2" outlet="o"/>
+         <dest obj="digital_6" inlet="in"/>
+         <dest obj="samplehold_2" inlet="s_h"/>
+      </net>
+      <net>
+         <source obj="digital_7" outlet="out"/>
+         <dest obj="flipflop_2" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="digital_3" outlet="out"/>
+         <dest obj="counter_2" inlet="trig"/>
+         <dest obj="preset_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="counter_2" outlet="o"/>
+         <dest obj="+1_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="+1_1" outlet="result"/>
+         <dest obj="preset_1" inlet="preset"/>
+         <dest obj="i_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="xfade_3" inlet="i2"/>
+         <dest obj="obj_1" inlet="inL"/>
+      </net>
+      <net>
+         <source obj="rectifier_1" outlet="out"/>
+         <dest obj="sin_3" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="sin_3" outlet="out"/>
+         <dest obj="soft_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="soft_1" outlet="out"/>
+         <dest obj="sin_1" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="sin_1" outlet="out"/>
+         <dest obj="sin_2" inlet="phase"/>
+      </net>
+      <net>
+         <source obj="sin_2" outlet="out"/>
+         <dest obj="soft_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="soft_2" outlet="out"/>
+         <dest obj="xfade_1" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="xfade_2" outlet="o"/>
+         <dest obj="mix_1" inlet="in2"/>
+         <dest obj="vu_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_6" outlet="out"/>
+         <dest obj="xfade_1" inlet="c"/>
+         <dest obj="xfade_2" inlet="c"/>
+      </net>
+      <net>
+         <source obj="analog_7" outlet="out"/>
+         <dest obj="xfade_3" inlet="c"/>
+      </net>
+      <net>
+         <source obj="soft_3" outlet="out"/>
+         <dest obj="soft_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="soft_4" outlet="out"/>
+         <dest obj="xfade_2" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="analog_8" outlet="out"/>
+         <dest obj="square_2" inlet="pitch"/>
+         <dest obj="divremc_1" inlet="a"/>
+         <dest obj="divremc_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="i_2" outlet="out"/>
+         <dest obj="*_1" inlet="b"/>
+      </net>
+      <net>
+         <source obj="divremc_1" outlet="rem"/>
+         <dest obj="*_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="*_1" outlet="result"/>
+         <dest obj="square_3" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="square_2" outlet="wave"/>
+         <dest obj="lfsrburst_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="square_3" outlet="wave"/>
+         <dest obj="lfsrburst_2" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="lfsrburst_1" outlet="out"/>
+         <dest obj="vca_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="lfsrburst_2" outlet="out"/>
+         <dest obj="vca_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_2" outlet="o"/>
+         <dest obj="mix_1" inlet="in3"/>
+         <dest obj="vu_3" inlet="in"/>
+      </net>
+      <net>
+         <source obj="vca_1" outlet="o"/>
+         <dest obj="mix_1" inlet="in4"/>
+         <dest obj="vu_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sel_1" outlet="o3"/>
+         <dest obj="ad_1" inlet="gate"/>
+         <dest obj="or_2" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="sel_1" outlet="o4"/>
+         <dest obj="ad_2" inlet="gate"/>
+         <dest obj="or_2" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="*_2" outlet="result"/>
+         <dest obj="ad_1" inlet="d"/>
+         <dest obj="ad_2" inlet="d"/>
+      </net>
+      <net>
+         <source obj="divremc_2" outlet="rem"/>
+         <dest obj="*_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="i_3" outlet="out"/>
+         <dest obj="*_2" inlet="b"/>
+      </net>
+      <net>
+         <source obj="gain_1" outlet="out"/>
+         <dest obj="vca_1" inlet="v"/>
+      </net>
+      <net>
+         <source obj="ad_2" outlet="env"/>
+         <dest obj="gain_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="gain_2" outlet="out"/>
+         <dest obj="vca_2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="ad_1" outlet="env"/>
+         <dest obj="gain_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="sel_1" outlet="o1"/>
+         <dest obj="or_1" inlet="i1"/>
+         <dest obj="FM_DRUM" inlet="TRIG"/>
+      </net>
+      <net>
+         <source obj="or_1" outlet="o"/>
+         <dest obj="or_3" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="or_2" outlet="o"/>
+         <dest obj="or_3" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="or_3" outlet="o"/>
+         <dest obj="digital_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="xfade_1" outlet="o"/>
+         <dest obj="vu_1" inlet="in"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="lp1_1" outlet="out"/>
+         <dest obj="xfade_3" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="obj_1" outlet="outL"/>
+         <dest obj="lp1_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_5" outlet="out"/>
+         <dest obj="FM_DRUM" inlet="KNOB"/>
+      </net>
+      <net>
+         <source obj="analog_4" outlet="out"/>
+         <dest obj="patcher_1" inlet="KNOB"/>
+      </net>
+      <net>
+         <source obj="samplehold_2" outlet="out"/>
+         <dest obj="patcher_1" inlet="DECAY"/>
+      </net>
+      <net>
+         <source obj="button1_1" outlet="out"/>
+         <dest obj="load_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="toggle_1" outlet="o"/>
+         <dest obj="clock_1" inlet="run"/>
+      </net>
+      <net>
+         <source obj="clock_1" outlet="pos4ppq"/>
+         <dest obj="i_4" inlet="a"/>
+      </net>
+      <net>
+         <source obj="sel_2" outlet="o1"/>
+         <dest obj="digital_2" inlet="in"/>
+         <dest obj="bool_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="analog_1" outlet="out"/>
+         <dest obj="modsource_1" inlet="v"/>
+      </net>
+      <net>
+         <source obj="square_1" outlet="wave"/>
+         <dest obj="modsource_1" inlet="trig"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>0</x>
+      <y>23</y>
+      <width>1664</width>
+      <height>1205</height>
+   </windowPos>
+</patch-1.0>

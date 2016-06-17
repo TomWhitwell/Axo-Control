@@ -1,0 +1,551 @@
+<patch-1.0>
+   <obj type="logic/inv" sha="a8bfe6f6bbfd2a76e25328c139315bc7aa2a6e18" uuid="2bd44b865d3b63ff9b80862242bf5be779e3ad5" name="inv_1" x="952" y="0">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="random speed" x="56" y="28">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA2 (ADC1_IN2)"/>
+      </attribs>
+   </obj>
+   <obj type="lfo/square" sha="b4420b58ca2ae5ece53d53540bc91bc9ed7a4b83" uuid="de6909eb64db13af5b43f979a4c130024b3a4793" name="square_1" x="294" y="42">
+      <params>
+         <frac32.s.map name="pitch" value="-34.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="env/ad" sha="27b3ed2c63d43d64a78d406f20737f83110a3df7" uuid="255cb0cd67470c7498f9c33b820facd26aa629ce" name="ad_1" x="392" y="42">
+      <params>
+         <frac32.s.map name="a" value="-64.0"/>
+         <frac32.s.map name="d" value="-11.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_2" x="490" y="42">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 1 g" sha="60cd6c5fad7f3f3985ccf64c7d05086e1b2f5499" uuid="e6982841c1bf323ee2062a4b6cc2737adafbd668" name="mix_2" x="546" y="42">
+      <params>
+         <frac32.u.map name="gain1" value="0.0">
+            <modulators>
+               <modulation sourceName="feedback" modName="" value="128.0"/>
+               <modulation sourceName="feedbackknob" modName="" value="128.0"/>
+            </modulators>
+         </frac32.u.map>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="delay/write sdram" sha="63d300dd732507b7237b5fd45676bc14c9e77ce7" uuid="5ae03f8d7b815edcfc40585d8bbac2ed48460fba" name="abc1" x="742" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="size" selection="262144 (5.46s)"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_6" x="868" y="42">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC3"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="logic/flipflop toggle" sha="3e483f67f78cab4aecc6bc5cf4e105e481839660" uuid="195e489e5fc3d275944b0de56c7a91c8641ea22a" name="flipflop_2" x="994" y="42">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="logic/or 2" sha="6941575503e8a946c74e5388ec4e6a97468ae3c5" uuid="3805d3c84d30032a44fbdbe42d9a2988a1790a3e" name="+_3" x="1106" y="56">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_4" x="56" y="84">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA6 (ADC1_IN6)"/>
+      </attribs>
+   </obj>
+   <obj type="math/*c" sha="a73a2cafcf92eb4b6524655dcee98a569d5ddc28" uuid="7a66f52a9594e7e9eb31328ea725cb3641a80b55" name="*c_1" x="504" y="112">
+      <params>
+         <frac32.u.map name="amp" value="12.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_3" x="798" y="112">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_7" x="1008" y="112">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB9"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="patch/modsource" sha="e0ee10b85ac38b70a682a69ace823af08f4b707d" uuid="c98f018a8d204ef6df1bf7008af6fd7d20f12fe4" name="feedbackknob" x="84" y="140">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="rand/uniform f trig" sha="926c3f305c1c8031d3cad3e29eb688cee124ab2e" uuid="223873125a332e3b8a82795a3eef167993adb086" name="uniform_1" x="280" y="140">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="mix/mix 2 g" sha="921aefdda41b92a27cc93c53b5154554d0ce6d3b" uuid="221f038da51943034a75e442c90624fcebfe6112" name="mix_1" x="882" y="154">
+      <params>
+         <frac32.u.map name="gain1" value="27.0"/>
+         <frac32.u.map name="gain2" value="55.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_1" x="406" y="168">
+      <params/>
+      <attribs>
+         <spinner attributeName="value" value="1"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="delay time" x="616" y="168">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA3 (ADC1_IN3)"/>
+      </attribs>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_4" x="798" y="168">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="lfo/saw" sha="bce38cfb8c1d56d3c98a8df7986ddf379f982033" uuid="ef2a162678b533c5e46c4e3c0decba17b1862d85" name="saw_1" x="294" y="196">
+      <params>
+         <frac32.s.map name="pitch" value="-10.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_8" x="1050" y="196">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC0"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_2" x="406" y="224">
+      <params/>
+      <attribs>
+         <spinner attributeName="value" value="10"/>
+      </attribs>
+   </obj>
+   <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_2" x="560" y="238">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" sha="4b93f3e0f08b85924e07feabcdfe53fc11aa6a48" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_2" x="630" y="238">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_1" x="56" y="252">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC1"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="logic/counter" sha="519c79f42a7c84352830b08e68696ecbf5d0bd52" uuid="7a141ba82230e54e5f5cd12da5dbe5a74ba854a5" name="counter_2" x="140" y="252">
+      <params>
+         <int32 name="maximum" value="3"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="output vol" x="728" y="252">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA7 (ADC1_IN7)"/>
+      </attribs>
+   </obj>
+   <obj type="mux/mux 3" sha="4fec5506c0192d9847ceb676291b05730c44bba4" uuid="9340a203d87e774443faa0d744b56e0967b23125" name="mux_1" x="308" y="280">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="const/i" sha="15b9dce9232a04e8881936a6ea800e66ae8e0da9" uuid="e202f44b2df17ae0b3e663b98ea6b14c8ff00408" name="i_3" x="406" y="280">
+      <params/>
+      <attribs>
+         <spinner attributeName="value" value="20"/>
+      </attribs>
+   </obj>
+   <obj type="disp/i" sha="e98a25a12afc62efc1991c3bb5290ccdf7214102" uuid="5e35fd0c62d81e70017289250cf28edd26e19e4a" name="i_4" x="532" y="294">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/smooth" sha="74c40dd64acc980ba4e6ffc729e07365b00044fa" uuid="6c5d08c282bb08bff24af85b4891447f99bcbc97" name="smooth_1" x="616" y="294">
+      <params>
+         <frac32.u.map name="time" value="40.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gain/vca" sha="c904cdd24d65968df2f5796e107db3747dd691a6" uuid="a9f2dcd18043e2f47364e45cb8814f63c2a37c0d" name="vca_1" x="728" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="audio/out stereo" sha="c27566f972d15f25252f61b5cff014a3edce9706" uuid="a1ca7a567f535acc21055669829101d3ee7f0189" name="out_1" x="784" y="308">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_2" x="56" y="322">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB1"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_6" x="154" y="336">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA5 (ADC1_IN5)"/>
+      </attribs>
+   </obj>
+   <obj type="mux/mux 3" sha="7b8c1bdc4c346af79924db822d442b98e3117776" uuid="94201ce36f0431043748c8a5e884ead94095a6f6" name="mux_2" x="406" y="336">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="math/smooth" sha="74c40dd64acc980ba4e6ffc729e07365b00044fa" uuid="6c5d08c282bb08bff24af85b4891447f99bcbc97" name="smooth_2" x="1022" y="336">
+      <params>
+         <frac32.u.map name="time" value="34.5"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="osc/sine" sha="edec4a9d5f533ea748cd564ce8c69673dd78742f" uuid="6e094045cca76a9dbf7ebfa72e44e4700d2b3ba" name="sine_1" x="294" y="364">
+      <params>
+         <frac32.s.map name="pitch" value="-20.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="ctrl/button" sha="3a0057991a9376823a6a654a8cf7201abdc31135" uuid="ef3d13774349df85aa9bfecf30dbc91ab8488b3f" name="button_1" x="476" y="364">
+      <params>
+         <bool32.mom name="b" value="0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="logic/counter" sha="519c79f42a7c84352830b08e68696ecbf5d0bd52" uuid="7a141ba82230e54e5f5cd12da5dbe5a74ba854a5" name="counter_1" x="546" y="364">
+      <params>
+         <int32 name="maximum" value="3"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_5" x="56" y="392">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA2 (ADC1_IN2)"/>
+      </attribs>
+   </obj>
+   <obj type="filter/lp1" sha="290a234e2f83eb072198d0158bcd5da02a3606c3" uuid="1b1fd7085e44d2b7b80b59b8d68796b909c1b2cc" name="lp1_1" x="798" y="406">
+      <params>
+         <frac32.s.map name="freq" value="64.0"/>
+      </params>
+      <attribs/>
+   </obj>
+   <obj type="conv/interp" sha="4b93f3e0f08b85924e07feabcdfe53fc11aa6a48" uuid="d68c1a8709d8b55e3de8715d727ec0a2d8569d9a" name="interp_1" x="434" y="420">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="delay/read interp" sha="6fda3a4b04cc8fc49e63240c2fff115695ec7a7" uuid="e3d8b8823ab551c588659520bf6cc25c630466c7" name="read_1" x="644" y="434">
+      <params>
+         <frac32.u.map name="time" value="0.0">
+            <modulators/>
+         </frac32.u.map>
+      </params>
+      <attribs>
+         <objref attributeName="delayname" obj="abc1"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="pitchshift" x="952" y="434">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA4 (ADC1_IN4)"/>
+      </attribs>
+   </obj>
+   <obj type="logic/flipflop toggle" sha="3e483f67f78cab4aecc6bc5cf4e105e481839660" uuid="195e489e5fc3d275944b0de56c7a91c8641ea22a" name="flipflop_1" x="14" y="448">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/digital" sha="90fc95d938b6230073e230ead488ad0c23936425" uuid="f59f139e8da912742832dc541157f20f30b7ac1b" name="digital_3" x="126" y="448">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PC2"/>
+         <combo attributeName="mode" selection="pulldown"/>
+      </attribs>
+   </obj>
+   <obj type="wave/play fn" sha="265ea21a8733c426440c843758b78eb5ae459cd9" uuid="25910f7130532e4934eed3cf2a934324790d0f00" name="play_1" x="490" y="462">
+      <params/>
+      <attribs>
+         <table attributeName="fn" table="/0/ARCHERS.raw"/>
+      </attribs>
+   </obj>
+   <obj type="mux/mux 2" sha="10c5b6d774e8c972b6bb863dad23e83034e0990f" uuid="539c246f4c360ac476e128cfbfa84348fb7f7e73" name="mux_3" x="322" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="disp/i" sha="e98a25a12afc62efc1991c3bb5290ccdf7214102" uuid="5e35fd0c62d81e70017289250cf28edd26e19e4a" name="i_5" x="840" y="476">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_2" x="952" y="490">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA0 (ADC1_IN0)"/>
+      </attribs>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_4" x="56" y="504">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB8"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="math/+" sha="49587c7bc7e1813d8a9a7a9be012580af00ea274" uuid="44553fdc8628c67ab535845ed1be304ad6c9553b" name="+_1" x="1092" y="518">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/out/digital" sha="865e8be3f5cda67286c22728b3d3a38cf6c8002d" uuid="320eed040f6c55bb24c56416596ac2e67d0c82bc" name="digital_5" x="336" y="546">
+      <params/>
+      <attribs>
+         <combo attributeName="pad" selection="PB0"/>
+         <combo attributeName="mode" selection="Push pull"/>
+      </attribs>
+   </obj>
+   <obj type="math/div 8" sha="2b6ae82b4ef5e3f2652a3bc1bf0c6a5e45daef30" uuid="4a6007f5cb2024c50e8449b3bb6bcaef6ac42edb" name="div_1" x="1008" y="546">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/analog" sha="e3ff2158ab5c372cfc7d9dddc5d64d55cd90c257" uuid="1c0c845ed2d7e06ae5f377ba13d9d09f4747ac87" name="analog_1" x="448" y="588">
+      <params/>
+      <attribs>
+         <combo attributeName="channel" selection="PA1 (ADC1_IN1)"/>
+      </attribs>
+   </obj>
+   <obj type="math/div 16" sha="153e55f554960498908693663e38bb762eb480d8" uuid="19cf8d3358046cb69c1139e51a3e1555742492e0" name="div_2" x="574" y="588">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="gpio/in/button1" sha="2d8a8388aa8ae748ba64967dc22e268e11146941" uuid="2f4fbacf3969a3a1ff9d23899566430051cb01f" name="button1_1" x="714" y="588">
+      <params/>
+      <attribs/>
+   </obj>
+   <obj type="patch/load" sha="7fe1625205bc84eae63cbeb5250b90396de93bb1" uuid="634bf1f8c313920d7f19fc402ba937fd1ee27802" name="load_1" x="812" y="588">
+      <params/>
+      <attribs>
+         <table attributeName="filename" table="2.bin"/>
+      </attribs>
+   </obj>
+   <nets>
+      <net>
+         <source obj="output vol" outlet="out"/>
+         <dest obj="vca_1" inlet="v"/>
+      </net>
+      <net>
+         <source obj="vca_1" outlet="o"/>
+         <dest obj="out_1" inlet="left"/>
+         <dest obj="out_1" inlet="right"/>
+      </net>
+      <net>
+         <source obj="square_1" outlet="wave"/>
+         <dest obj="ad_1" inlet="trig"/>
+         <dest obj="uniform_1" inlet="trig"/>
+         <dest obj="feedbackknob" inlet="trig"/>
+         <dest obj="play_1" inlet="start"/>
+         <dest obj="digital_5" inlet="in"/>
+      </net>
+      <net>
+         <source obj="ad_1" outlet="env"/>
+         <dest obj="vca_2" inlet="v"/>
+      </net>
+      <net>
+         <source obj="mux_3" outlet="o"/>
+         <dest obj="vca_3" inlet="a"/>
+         <dest obj="vca_4" inlet="a"/>
+      </net>
+      <net>
+         <source obj="uniform_1" outlet="rand"/>
+         <dest obj="mux_1" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="saw_1" outlet="wave"/>
+         <dest obj="mux_1" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="i_1" outlet="out"/>
+         <dest obj="mux_2" inlet="i0"/>
+      </net>
+      <net>
+         <source obj="i_2" outlet="out"/>
+         <dest obj="mux_2" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="i_3" outlet="out"/>
+         <dest obj="mux_2" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="mux_2" outlet="o"/>
+         <dest obj="interp_1" inlet="i"/>
+         <dest obj="i_4" inlet="in"/>
+      </net>
+      <net>
+         <source obj="button_1" outlet="o"/>
+         <dest obj="counter_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="counter_1" outlet="o"/>
+         <dest obj="mux_2" inlet="s"/>
+      </net>
+      <net>
+         <source obj="mix_1" outlet="out"/>
+         <dest obj="vca_1" inlet="a"/>
+      </net>
+      <net>
+         <source obj="play_1" outlet="out"/>
+         <dest obj="mux_3" inlet="i2"/>
+      </net>
+      <net>
+         <source obj="sine_1" outlet="wave"/>
+         <dest obj="*c_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="vca_2" outlet="o"/>
+         <dest obj="mux_3" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="mux_1" outlet="o"/>
+         <dest obj="sine_1" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="counter_2" outlet="o"/>
+         <dest obj="mux_1" inlet="s"/>
+      </net>
+      <net>
+         <source obj="read_1" outlet="out"/>
+         <dest obj="mix_2" inlet="in1"/>
+         <dest obj="lp1_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="digital_1" outlet="out"/>
+         <dest obj="counter_2" inlet="trig"/>
+         <dest obj="digital_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="digital_3" outlet="out"/>
+         <dest obj="flipflop_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="flipflop_1" outlet="o"/>
+         <dest obj="digital_4" inlet="in"/>
+         <dest obj="mux_3" inlet="s"/>
+      </net>
+      <net>
+         <source obj="random speed" outlet="out"/>
+         <dest obj="square_1" inlet="pitch"/>
+      </net>
+      <net>
+         <source obj="analog_4" outlet="out"/>
+         <dest obj="feedbackknob" inlet="v"/>
+      </net>
+      <net>
+         <source obj="analog_6" outlet="out"/>
+         <dest obj="play_1" inlet="pos"/>
+      </net>
+      <net>
+         <source obj="*c_1" outlet="out"/>
+         <dest obj="vca_2" inlet="a"/>
+      </net>
+      <net>
+         <source obj="vca_3" outlet="o"/>
+         <dest obj="mix_2" inlet="bus_in"/>
+      </net>
+      <net>
+         <source obj="vca_4" outlet="o"/>
+         <dest obj="mix_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="interp_2" outlet="o"/>
+         <dest obj="read_1" inlet="time"/>
+      </net>
+      <net>
+         <source obj="smooth_1" outlet="out"/>
+         <dest obj="interp_2" inlet="i"/>
+      </net>
+      <net>
+         <source obj="smooth_2" outlet="out"/>
+         <dest obj="read_1" inlet="speed"/>
+      </net>
+      <net>
+         <source obj="mix_2" outlet="out"/>
+         <dest obj="abc1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="lp1_1" outlet="out"/>
+         <dest obj="mix_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="button1_1" outlet="out"/>
+         <dest obj="load_1" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="digital_6" outlet="out"/>
+         <dest obj="inv_1" inlet="i"/>
+      </net>
+      <net>
+         <source obj="inv_1" outlet="o"/>
+         <dest obj="flipflop_2" inlet="trig"/>
+      </net>
+      <net>
+         <source obj="analog_2" outlet="out"/>
+         <dest obj="div_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="pitchshift" outlet="out"/>
+         <dest obj="+_1" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_1" outlet="out"/>
+         <dest obj="smooth_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="div_1" outlet="out"/>
+         <dest obj="+_1" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="analog_1" outlet="out"/>
+         <dest obj="div_2" inlet="in"/>
+      </net>
+      <net>
+         <source obj="delay time" outlet="out"/>
+         <dest obj="+_2" inlet="in1"/>
+      </net>
+      <net>
+         <source obj="+_2" outlet="out"/>
+         <dest obj="smooth_1" inlet="in"/>
+      </net>
+      <net>
+         <source obj="div_2" outlet="out"/>
+         <dest obj="+_2" inlet="in2"/>
+      </net>
+      <net>
+         <source obj="+_3" outlet="o"/>
+         <dest obj="digital_7" inlet="in"/>
+         <dest obj="vca_3" inlet="v"/>
+         <dest obj="vca_4" inlet="v"/>
+      </net>
+      <net>
+         <source obj="flipflop_2" outlet="o"/>
+         <dest obj="+_3" inlet="i1"/>
+      </net>
+      <net>
+         <source obj="digital_8" outlet="out"/>
+         <dest obj="+_3" inlet="i2"/>
+      </net>
+   </nets>
+   <settings>
+      <subpatchmode>no</subpatchmode>
+   </settings>
+   <notes><![CDATA[]]></notes>
+   <windowPos>
+      <x>95</x>
+      <y>47</y>
+      <width>1177</width>
+      <height>612</height>
+   </windowPos>
+</patch-1.0>
