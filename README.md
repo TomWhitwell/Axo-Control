@@ -5,7 +5,7 @@ This is an unnoficial knob board for the [Axoloti Core board](http://www.axoloti
 Quick demo video: https://www.instagram.com/p/BAqbNhdjmaf/   
 Another demo video: https://www.youtube.com/watch?v=lhx-O6MQIug  
 
-##BOM  
+## BOM  
 1 x PS2/3 analogue joystick, available from [Sparkfun](https://www.sparkfun.com/products/9032) or [Cool Components](https://www.coolcomponents.co.uk/thumb-joystick.html)  
 
 6 x 10k Potentiometers
@@ -33,12 +33,12 @@ Another demo video: https://www.youtube.com/watch?v=lhx-O6MQIug
 
 1 x 40 pin Male Header to mount on the Control board
 
-##STATUS 
+## STATUS 
 January 2016: Board built, works well. OSHPark project here: https://oshpark.com/shared_projects/XJm2ysZW  
 Video here: https://www.instagram.com/p/BAqbNhdjmaf/   
 December 2015: Design completed for Rev1 board, prototypes ordered from OSH Park. Design, BOM, Layout NOT VERIFIED. 
 
-##LICENSE 
+## LICENSE 
 This project is Open Hardware  
 All hardware and software design in this project is Creative Commons licensed by Tom Whitwell: CC-BY-SA: Attribution / ShareAlike.  
 If you use any work in this project, you should credit me, and you must republish any changes you make under the same license.  
